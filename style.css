@@ -1,0 +1,600 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: rgb(24, 24, 24);
+    background-image: url("peter-broomfield-m3m-lnR90uM-unsplash.jpg");
+    color: white;
+}
+
+/* navbar  */
+
+/* Add this to your CSS file */
+.navbar .nav-link:hover {
+    color: white !important;
+}
+
+.navbar .nav-link:hover span:last-child {
+    width: 100% !important;
+}
+
+/* Smooth animation for mobile menu */
+.navbar-collapse {
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+.section1 {
+    height: 90vh;
+    background-image: url("images/peter-broomfield-m3m-lnR90uM-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    filter: blur(3px) brightness(1.2);
+    transform: scale(1.05);
+    animation: premiumEntrance 1.8s ease-out forwards;
+}
+
+@keyframes premiumEntrance {
+    to {
+        opacity: 1;
+        filter: blur(0) brightness(1);
+        transform: scale(1);
+    }
+}
+
+.section1 {
+    /* Previous background styles... */
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUpFade 1.2s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+    animation-delay: 0.3s;
+    /* Optional delay */
+}
+
+@keyframes slideUpFade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section1 {
+    /* Previous background styles... */
+    opacity: 0;
+    filter: blur(3px) brightness(1.2);
+    transform: scale(1.05);
+    animation: premiumEntrance 1.8s ease-out forwards;
+}
+
+@keyframes premiumEntrance {
+    to {
+        opacity: 1;
+        filter: blur(0) brightness(1);
+        transform: scale(1);
+    }
+}
+
+.form {
+    margin-top: 70px;
+    background-color: #FF5715;
+    opacity: 0.9;
+    width: 35%;
+}
+
+.btn1 {
+    background-color: black;
+    border: none;
+    outline: none;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    background: linear-gradient(to right, rgb(40, 40, 40), rgb(20, 18, 18));
+}
+
+
+/* section 2 */
+
+.column1 img {
+    height: 350px;
+    width: 480px;
+    margin-left: 60px;
+}
+
+.container2 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.btn3 {
+    background: #FF5715;
+    color: white;
+    outline: none;
+    border: none;
+    margin-top: 7px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-size: 200% auto;
+    transition: background-position 0.4s ease-in-out;
+}
+
+.btn3:hover {
+    background-color: #e45f2a;
+    background-position: right center;
+}
+
+
+.container2 {
+    opacity: 0;
+    transform: translateY(30px);
+    /* Start below */
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Add smooth animation using :not(:empty) */
+.container2:not(:empty) {
+    opacity: 1;
+    transform: translateY(0);
+    /* End position */
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Keyframe animation for smooth sliding up and fade */
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+        /* Start below */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        /* End position */
+    }
+}
+
+.container2 {
+    animation: fadeInSlideUp 1s ease-out forwards;
+}
+
+/* Optional: Smooth hover effect on the minus icon */
+.fas.fa-minus {
+    transition: color 0.3s;
+}
+
+.fas.fa-minus:hover {
+    color: #FF5722;
+    /* Change color on hover */
+}
+
+
+/* section3 */
+.items h2 {
+    color: #FF5715;
+
+}
+
+.items p {
+    font-weight: 500;
+    font-size: large;
+}
+
+.items {
+    border: 1px solid #FF5715;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+/* section 5 */
+
+.colmn5 ul li {
+    list-style: none;
+}
+
+ul {
+    padding-left: 0;
+    /* Removes default left padding */
+    margin-left: 0;
+    /* Removes default left margin */
+    list-style: none;
+    /* Removes the default bullet points */
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    /* Aligns the icon and text properly */
+}
+
+ul li i {
+    margin-right: 10px;
+    /* Adds space between the icon and text */
+}
+
+.img-6 {
+    filter: contrast(100%);
+    filter: brightness(80%);
+    margin-left: 0px;
+}
+
+.container3 {
+    padding-left: 0;
+    margin-left: 13px;
+    margin-bottom: 100px;
+    margin-top: 150px;
+
+}
+
+.column1 {
+    padding-left: 0;
+    /* Ensures no padding on the left of the column */
+    margin-left: 0;
+    /* Ensures no margin on the left of the column */
+}
+
+.column1 img {
+    height: 350px;
+    width: 480px;
+    margin-left: 60px;
+}
+
+.img-6 {
+    height: 350px;
+    width: 500px;
+    display: block;
+    margin-left: 0px;
+    padding-left: 0;
+
+}
+
+.container4 {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+
+/* section 5 */
+
+
+/* Override Bootstrap's default blue focus/active states */
+.accordion-button:not(.collapsed) {
+    color: white !important;
+    background-color: rgba(255, 107, 53, 0.2) !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+    border-color: #FF6B35 !important;
+}
+
+/* Change the default accordion button icon color */
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FF6B35'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FF6B35'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}
+
+/* Add animation for the accordion */
+.accordion-button {
+    transition: all 0.3s ease !important;
+}
+
+.accordion-button:hover {
+    transform: translateX(5px);
+}
+
+/* Make accordion items transparent */
+.accordion-item {
+    border: none !important;
+}
+
+/* Style for the CTA button */
+.btn:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+
+
+/* footer  */
+
+
+.text-secondary {
+    color: #9e9e9e !important;
+}
+
+footer a.text-secondary:hover {
+    color: #FF6B35 !important;
+    transform: translateX(5px);
+    display: inline-block;
+}
+
+footer .input-group .form-control {
+    border-radius: 4px 0 0 4px;
+}
+
+footer .input-group .btn {
+    border-radius: 0 4px 4px 0;
+}
+
+/* Added class for social icons to remove blue outline/line */
+.social-icon {
+    outline: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+    transform: translateY(-3px);
+    outline: none;
+    box-shadow: none;
+}
+
+/* Make placeholder text more visible */
+.newsletter-input::placeholder {
+    color: #cccccc !important;
+    opacity: 1;
+}
+
+/* Additional styles for cross-browser compatibility */
+.newsletter-input:-ms-input-placeholder {
+    color: #cccccc !important;
+}
+
+.newsletter-input::-ms-input-placeholder {
+    color: #cccccc !important;
+}
+
+/* Remove default focus outline on input */
+.newsletter-input:focus {
+    box-shadow: none;
+    border-color: #FF6B35;
+}
+
+.newsletter-input {
+    color: white !important;
+}
+
+.newsletter-input::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.newsletter-input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+    opacity: 1;
+}
+
+.newsletter-input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.newsletter-input:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.newsletter-input::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
+
+
+
+/* sectiom 6 */
+
+
+.carhub-contact-section {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 80px 0;
+}
+
+.carhub-contact-title {
+    position: relative;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    margin-left: -35px;
+}
+
+.carhub-contact-title:before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.carhub-contact-box {
+    background-color: var(--secondary-dark);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px #FF5722;
+}
+
+.carhub-contact-sidebar {
+    background-color: var(--primary-color);
+    height: 100%;
+    padding: 3rem 2rem;
+}
+
+.carhub-contact-sidebar h3 {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.carhub-contact-item {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.carhub-contact-icon {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.carhub-contact-form-area {
+    padding: 3rem 2rem;
+}
+
+.carhub-form-input {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+    padding: 12px 15px;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.carhub-form-input:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--primary-color);
+    color: var(--text-light);
+    box-shadow: none;
+    outline: none;
+}
+
+.carhub-form-input::placeholder {
+    color: var(--text-gray);
+}
+
+.carhub-btn-submit {
+    /* background-color: var(--primary-color); */
+    background-color: #FF5715;
+    border: none;
+    width: 100%;
+    padding: 12px 30px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    color: white;
+    cursor: pointer;
+    border: #FF5715;
+}
+
+.carhub-btn-submit:hover {
+    background-color: #e64a19;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 87, 34, 0.4);
+}
+
+.carhub-social-links {
+    margin-top: 2rem;
+}
+
+.carhub-social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-right: 10px;
+    color: var(--text-light);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.carhub-social-icon:hover {
+    background-color: #FF5715;
+    transform: translateY(-3px);
+    color: white;
+}
+
+.carhub-map-container {
+    height: 100%;
+    min-height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+@media (max-width: 991.98px) {
+
+    .navbar-nav {
+        padding: 1rem 0;
+    }
+
+    .carhub-contact-sidebar {
+        padding: 2rem;
+    }
+
+    .carhub-contact-form-area {
+        padding: 2rem;
+    }
+
+    .carhub-map-container {
+        height: 300px;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.8rem 0;
+    }
+
+
+    .form {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: #FF5715;
+        opacity: 0.9;
+        width: 100%;
+    }
+
+    .column1 img {
+        height: 200px;
+        width: 270px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .img-6 {
+        width: 100%;
+        height: 200px;
+        display: block;
+        margin-left: -5px;
+        padding-left: 0;
+    }
+
+    .h2,
+    h2 {
+        font-size: calc(1.325rem + .9vw);
+        margin-top: 20px;
+    }
+
+
+
+}
